@@ -70,7 +70,7 @@ function VisitPage() {
           <div className="relative">
             <div className="animate-blob overflow-hidden mirror-shape shadow-red">
               <img
-                src={oliveRoom.url}
+                src={`${import.meta.env.BASE_URL}images/mizej-olive-room.jpg`}
                 alt="Inside Mizej with olive trees and guests"
                 className="aspect-[4/5] w-full object-cover"
               />
