@@ -1,11 +1,13 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowUpRight, Star } from "lucide-react";
-import storefront from "@/assets/storefront.jpg.asset.json";
-import logoWall from "@/assets/logo-wall.jpg.asset.json";
-import bench from "@/assets/bench.jpg.asset.json";
-import mirror from "@/assets/mirror.jpg.asset.json";
-import oliveTable from "@/assets/olive-table.jpg.asset.json";
-import oliveRoom from "@/assets/olive-room.jpg.asset.json";
+const images = {
+  storefront: `${import.meta.env.BASE_URL}images/mizej-storefront.jpg`,
+  logoWall: `${import.meta.env.BASE_URL}images/mizej-logo-wall.jpg`,
+  bench: `${import.meta.env.BASE_URL}images/mizej-bench.jpg`,
+  mirror: `${import.meta.env.BASE_URL}images/mizej-mirror.jpg`,
+  oliveTable: `${import.meta.env.BASE_URL}images/mizej-olive-table.jpg`,
+  oliveRoom: `${import.meta.env.BASE_URL}images/mizej-olive-room.jpg`,
+};
 import { ArabicName, LogoMark } from "@/components/mizej/Logo";
 import { Marquee } from "@/components/mizej/Marquee";
 import { Reveal } from "@/components/mizej/Reveal";
@@ -82,7 +84,7 @@ function Index() {
           <div className="relative mx-auto w-full max-w-md">
             <div className="animate-blob overflow-hidden mirror-shape shadow-red ring-8 ring-card">
               <img
-                src={storefront.url}
+                src={images.storefront}
                 alt="Mizej storefront with the Arabic sign مزاج"
                 className="aspect-[3/4] w-full object-cover"
               />
@@ -111,7 +113,7 @@ function Index() {
           <Reveal>
             <div className="relative mx-auto aspect-square max-w-md overflow-hidden rounded-full shadow-red animate-halo">
               <img
-                src={logoWall.url}
+                src={images.logoWall}
                 alt="The Mizej logo carved into a red plaster wall"
                 className="size-full object-cover"
                 loading="lazy"
@@ -151,10 +153,10 @@ function Index() {
             </p>
           </Reveal>
           <div className="mt-14 grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-6">
-            <GalleryImg src={bench.url} alt="Red velvet benches with glowing logo discs" className="md:row-span-2" delay={0} />
-            <GalleryImg src={oliveTable.url} alt="Long white table with olive trees" className="md:mt-16" delay={100} />
-            <GalleryImg src={mirror.url} alt="Wavy illuminated mirror and red cup wall" className="md:row-span-2" delay={200} />
-            <GalleryImg src={oliveRoom.url} alt="People working on laptops at Mizej" className="md:mt-16" delay={300} />
+            <GalleryImg src={images.bench} alt="Red velvet benches with glowing logo discs" className="md:row-span-2" delay={0} />
+            <GalleryImg src={images.oliveTable} alt="Long white table with olive trees" className="md:mt-16" delay={100} />
+            <GalleryImg src={images.mirror} alt="Wavy illuminated mirror and red cup wall" className="md:row-span-2" delay={200} />
+            <GalleryImg src={images.oliveRoom} alt="People working on laptops at Mizej" className="md:mt-16" delay={300} />
           </div>
         </div>
       </section>
