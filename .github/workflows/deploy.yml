@@ -1,9 +1,10 @@
 
 name: Deploy Mizej Coffee
 
-on:
+'on':
   push:
-    branches: [main]
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:
