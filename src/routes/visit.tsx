@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ArrowUpRight, Check, Clock, Copy, Instagram, MapPin, Wifi } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
-import oliveRoom from "@/assets/olive-room.jpg.asset.json";
+`${import.meta.env.BASE_URL}images/mizej-olive-room.jpg`
 import { ArabicName, LogoMark } from "@/components/mizej/Logo";
 import { Reveal } from "@/components/mizej/Reveal";
 import { TikTokIcon } from "@/components/mizej/SiteFooter";
