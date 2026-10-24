@@ -4,9 +4,9 @@ export const SHOP = {
   tagline: "Coffee shop · Mood",
   address: "P645+XW3, Av. Martyrs, El Mourouj",
   city: "El Mourouj, Tunisia",
-  mapsUrl: "https://www.google.com/maps/search/?api=1&query=P645%2BXW3%20El%20Mourouj",
+  mapsUrl: "https://maps.app.goo.gl/piz1nwDdAejABhcV7",
   mapsEmbed:
-    "https://www.google.com/maps?q=P645%2BXW3+El+Mourouj&z=17&output=embed",
+    "https://www.google.com/maps?q=Mizej+coffee+shop@36.707476,10.2097652&z=18&output=embed",
   instagram: "https://www.instagram.com/mizej_coffeeshop",
   instagramHandle: "@mizej_coffeeshop",
   tiktok: "https://www.tiktok.com/@mizej_mood",
