@@ -6,7 +6,7 @@ export const SHOP = {
   city: "El Mourouj, Tunisia",
   mapsUrl: "https://maps.app.goo.gl/piz1nwDdAejABhcV7",
   mapsEmbed:
-    "https://www.google.com/maps?q=Mizej+coffee+shop@36.707476,10.2097652&z=18&output=embed",
+    "https://www.google.com/maps?q=36.707476,10.2097652&z=18&output=embed",
   instagram: "https://www.instagram.com/mizej_coffeeshop",
   instagramHandle: "@mizej_coffeeshop",
   tiktok: "https://www.tiktok.com/@mizej_mood",
